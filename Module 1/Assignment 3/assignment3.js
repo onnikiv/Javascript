@@ -1,4 +1,4 @@
-// Numero promptit.
+// Numero promptit. Promptit muutetaan integereiksi.
 const number = parseInt(prompt(`1. Enter a number: `));
 const number2 = parseInt(prompt(`2. Enter another number: `));
 const number3 = parseInt(prompt(`3. Enter a third number: `));
