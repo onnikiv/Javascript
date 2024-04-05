@@ -1,3 +1,4 @@
+"use strict";
 // Numero promptit. Promptit muutetaan integereiksi.
 const number = parseInt(prompt(`1. Enter a number: `));
 const number2 = parseInt(prompt(`2. Enter another number: `));
