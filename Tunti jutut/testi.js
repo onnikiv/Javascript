@@ -61,3 +61,4 @@ console.log(Math.random());
 
 // arvotaan kokonaislukuna arvo väliltä 1-6
 console.log(Math.floor(Math.random()*6+1));
+
