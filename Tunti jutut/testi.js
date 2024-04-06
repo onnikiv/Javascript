@@ -29,8 +29,6 @@ age++;
 age = age + 1;
 age += 1;
 
-
-
 console.log(`${name}:n ikä on ${age + 1} vuotta.`);
 
 const isUnderAge = true;
