@@ -5,9 +5,9 @@ const number2 = parseInt(prompt(`2. Enter another number: `));
 const number3 = parseInt(prompt(`3. Enter a third number: `));
 
 // Summa, tulo ja keskiarvo muunnokset.
-sum = number + number2 + number3;
-product = number * number2 * number3;
-average = sum / 3;
+let sum = number + number2 + number3;
+let product = number * number2 * number3;
+let average = sum / 3;
 
 // Viittaukset div-elementteihin, <div id="sum"></div> tyyppisesti, querySelectorissa pitää muistaa # merkki.
 const sumElement = document.querySelector("#sum");
