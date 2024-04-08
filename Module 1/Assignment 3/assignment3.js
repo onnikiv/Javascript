@@ -12,12 +12,12 @@ let average = sum / 3;
 // Viittaukset div-elementteihin, <div id="sum"></div> tyyppisesti, querySelectorissa pitää muistaa # merkki.
 const sumElement = document.querySelector("#sum");
 console.log(sumElement); // Debug consoleen
-sumElement.textContent = "The sum of your numbers is " + sum + ".";
+sumElement.textContent = "The Sum of your numbers is " + sum + ".";
 
 const productElement = document.querySelector("#product");
 console.log(productElement); // Debug consoleen
-productElement.textContent = "The product of your numbers is " + product + ".";
+productElement.textContent = "The Product of your numbers is " + product + ".";
 
 const averageElement = document.querySelector("#average");
 console.log(averageElement); // Debug consoleen
-averageElement.textContent = "The average of your numbers is " + average + ".";
+averageElement.textContent = "The Average of your numbers is " + average + ".";
