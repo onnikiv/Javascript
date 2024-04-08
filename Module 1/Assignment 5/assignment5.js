@@ -1,3 +1,5 @@
+"use strict";
+
 const yearInput = prompt(`Enter a year: `);
 console.log(yearInput);
 let year = parseInt(yearInput);
