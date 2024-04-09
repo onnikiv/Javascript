@@ -1,11 +1,12 @@
 const primeNumber = parseInt(prompt("Give me a Number"));
 let primeNumberCheck
-// primeNumber % primeNumber == 0 && primeNumber % 1 == 0
-if (primeNumber % primeNumber == 0 && primeNumber % 1 == 0){
-  primeNumberCheck = true; 
 
-} else{
-  primeNumberCheck = false;
+for (let i =2; i < primeNumber; i++){
+    if (primeNumber % i == 0);
+        primeNumberCheck == true;
+        break
+
+    primeNumberCheck == false
 }
 document.querySelector("p").textContent += primeNumberCheck ? "is yes" : "is no HOM";
 
