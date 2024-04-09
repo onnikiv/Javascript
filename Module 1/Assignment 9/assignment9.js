@@ -1,31 +1,26 @@
-const primeNumber = parseInt(prompt("Give me a Number"));
-let primeNumberCheck
-
-for (let i =2; i < primeNumber; i++){
-    if (primeNumber % i == 0);
-        primeNumberCheck == true;
+"use strict";
+let primeNumberCheck = parseInt(prompt("Give me a Number"));
+document.getElementById("p").innerHTML = testNumber
+for (let i =2; i < testNumber; i++){
+    if (testNumber % i == 0);
+        testNumber == true;
         break
+    }
+        testNumber == false
 
-    primeNumberCheck == false
-}
-document.querySelector("p").textContent += primeNumberCheck ? "is yes" : "is no HOM";
+
+document.querySelector("p").textContent += primeNumberCheck ? "YES" : "NO";
 
 ```
-if luku_string.isdigit():   #Tarkistetaan syöttö, jos luku niin tehdään merkkijonosta(str) luku(int).
-    luku = int(luku_string)
-
-    if luku < 2:    #Jos alle 2 ei voi olla alkuluku
-        print(f"{luku} ei ole alkuluku.")
-    else:
-        alkuluku = True  # Aluksi alkuluku on totta.
-        for i in range(2, int(luku ** 0.5) + 1):
-            if luku % i == 0:
-                alkuluku = False
+'use strict';
+        let testInt = prompt('Anna numero')
+        document.getElementById('result').innerHTML = testInt   
+        for(let i=2; i<testInt; i++){
+            if(testInt%i==0){
+                testInt = true
                 break
-    if alkuluku:
-        print(f"{luku} on alkuluku.")
-    else:
-        print(f"{luku} ei ole alkuluku.")
-else:
-    print("Virheellinen syöte. Syötä kokonaisluku.")
+            }
+            testInt = false
+        }
+        document.getElementById('result').innerHTML += testInt ? ' is not a prime number' : ' is a prime number'
 ```
