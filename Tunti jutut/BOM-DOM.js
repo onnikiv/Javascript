@@ -47,6 +47,8 @@ thirdSection.innerHTML = `
 
 const buttonElement = document.querySelector('button');
 buttonElement.addEventListener('click', function () {
+    // pysäytetään click-eventin eteneminen dom-puussa tähän.
+    event.stopPropagation();
     console.log('painettu napulaa');
     // newP.classList.add('red');
     // newP.classList.remove('blue');
@@ -63,9 +65,20 @@ document.addEventListener('mousemove',(event) => {
     console.log(event);
 });
 `
-
+// kontekstimenun esto
 document.addEventListener('contextmenu', function (event) {
     console.log(event);
     event.preventDefault();
     alert('ei toimi');
+})
+
+// tekstikappale klikki
+newP.addEventListener('click', function() {
+    newP.innerText = 'Klikkasit tähän';
+})
+
+// koko dokumentin klikki tapahtuma
+document.addEventListener('click', function (event) {
+    console.log('sivua klikattu', event);
+
 })
