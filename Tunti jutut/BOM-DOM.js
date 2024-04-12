@@ -82,3 +82,10 @@ document.addEventListener('click', function (event) {
     console.log('sivua klikattu', event);
 
 })
+
+document.addEventListener('click', function (event){
+    console.log('sivua klikattu, kohde:', event.target, event.currentTarget.tagName);
+    // klikkauksen kohde elementin käsittely
+    // event.target.textContent = 'xxx';
+    event.target.classList.add('red');
+})
