@@ -1,12 +1,13 @@
 const userInput = parseInt(prompt("Give me the number of participants:"));
-console.log(`${userInput} annettu luku`)
 
-nimiLista = [];
-console.log(`Nimilista alussa: ${nimiLista}`);
-
-for (let i = 0; i< userInput; 1++) {
+nameList = [];
+for (let i = 1; i <= userInput; i++) {
     const nameInput = prompt(`${i}. Participants name:`);
-    nimiLista.push(nameInput);
+    nameList.push(nameInput);
 }
 
-console.log(nimiLista);
+console.log(nameList);
+
+let sortedNamelist = nameList.sort();
+
+console.log(sortedNamelist);
