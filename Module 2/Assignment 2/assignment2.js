@@ -1,16 +1,21 @@
 const userInput = parseInt(prompt("Give me the number of participants:"));
 
-nameList = [];
+const nameList = [];
 for (let i = 1; i <= userInput; i++) {
-    const nameInput = prompt(`${i}. Participants name:`);
-    nameList.push(nameInput);
+  const nameInput = prompt(`${i}. Participant's name:`);
+  nameList.push(nameInput);
 }
 
 console.log(nameList);
 
-let sortedNamelist = nameList.sort();
+const sortedNameList = nameList.sort();
+console.log(sortedNameList);
 
-console.log(sortedNamelist);
+const unorderedList = document.createElement("ul");
+document.body.appendChild(unorderedList);
 
-const listItem = document.createElement("li")
-listItem
+sortedNameList.forEach((name) => {
+  const listItem = document.createElement("li");
+  listItem.textContent = name;
+  unorderedList.appendChild(listItem);
+});
