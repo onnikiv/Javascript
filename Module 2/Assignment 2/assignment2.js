@@ -11,3 +11,6 @@ console.log(nameList);
 let sortedNamelist = nameList.sort();
 
 console.log(sortedNamelist);
+
+const listItem = document.createElement("li")
+listItem
