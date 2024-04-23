@@ -92,4 +92,31 @@ const picArray = [
   },
 ];
 
-// add your code here
+const sectionElement = document.querySelector('section');
+
+for (let i = 0; i < picArray.length; i++) { // nollasta taulukon pituuteen
+  const articleElement = document.createElement('article'); // article- osio mihin kaikki sijoitetaan
+  const h2Element = document.createElement('h2'); // h2
+  const figureElement = document.createElement('figure'); // figure mihin kuva tulee
+  const imageElement = document.createElement('img'); // image
+  
+  const itemInArray = picArray[i]; // yksittäinen item taulukosta
+
+  imageElement.src = itemInArray.image.medium; // kuvan source
+  imageElement.alt = itemInArray.title; // kuvan alt-text
+
+  const figCaption = document.createElement('figcaption');
+  figCaption.textContent = itemInArray.caption;
+
+  const paragraph = document.createElement('p');
+  paragraph.textContent = itemInArray.description;
+  // eka lisätään figureen kuva, ja alt-text
+  figureElement.appendChild(imageElement);
+  figureElement.appendChild(figCaption);
+  // sitten article osioon kaikki
+  articleElement.appendChild(h2Element);
+  articleElement.appendChild(figureElement);
+  articleElement.appendChild(paragraph);
+  // lopuksi kaikki sectioniin
+  sectionElement.appendChild(articleElement);
+}
