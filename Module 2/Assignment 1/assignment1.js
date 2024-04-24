@@ -11,4 +11,4 @@ numbers.sort(function (a, b) {
 });
 
 console.log(`Listan sisältö sortattuna takaperin: ${numbers}`);
-document.querySelector("p").textContent = `Lista: ${numbers} `;
+document.querySelector("p").textContent = `List: ${numbers} `;

@@ -1,7 +1,7 @@
 let numbers = [];
 
 while (true) {
-    const numberInput = parseInt(prompt('Give me a number:'));
+    const numberInput = parseInt(prompt('Give me a number:  [entering a previously given number stops]'));
     console.log(numberInput);
 
     if (numbers.includes(numberInput)) {

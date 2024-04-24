@@ -1,4 +1,4 @@
 const buttonElement = document.querySelector('button');
 buttonElement.addEventListener('click', function () {
-    alert('painettu napulaa');
+    alert('Button pressed!');
 });

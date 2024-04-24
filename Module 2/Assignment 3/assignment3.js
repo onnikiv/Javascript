@@ -1,6 +1,6 @@
 let koirat = [];
 for (let i = 1; i < 7; i++) {
-  let koira = prompt(`Anna ${i}. Koiran nimi.`);
+  let koira = prompt(`${i}. Dog Name:`);
   console.log(`${i}. ${koira}`);
   koirat.push(koira);
 }
