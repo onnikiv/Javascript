@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 4 - Assignment 1</title>
+    <script defer src="assignment1.js"></script>
+</head>
+<body>
+    <h1>Assignment 1</h1>
+    <a href="../index.html">Back</a>
+    <h2>Go to Developer Tools!</h2>
+    <form id="showHaku">
+        <input id="query" name="q" type="text" />
+        <input type="submit" value="Search" />
+    </form>
+    <script>
+        const showHaku = document.getElementById("showHaku");
+        showHaku.addEventListener("submit", async function(event) {
+            event.preventDefault();
+            const haku = document.getElementById("query").value;
+            try {
+                const vastaus = await fetch(`https://api.tvmaze.com/search/shows?q=${haku}`);
+                const jsonData = await vastaus.json();
+                console.log(jsonData);
+            } catch (error) {
+                console.log(error.message);
+            }
+        });
+    </script>
+</body>
+</html>
